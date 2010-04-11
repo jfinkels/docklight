@@ -102,7 +102,7 @@ max_velocity = max(velocities)
 
 print 'Number of recordings made:', num_recordings
 print 'Total time of recordings, in milliseconds:', num_recordings / RECORDINGS_PER_MS
-print 'Total time of recordings, in seconds:', num_recordings / RECORDINGS_PER_SECOND
+print 'Total time of recordings, in seconds:', num_recordings / float(RECORDINGS_PER_SECOND)
 print 'Total time of recordings, in minutes:', num_recordings / RECORDINGS_PER_MINUTE
 print
 print 'Maximum distance traveled per timestep:', max_distance_per_timestep
