@@ -18,7 +18,7 @@ RECORDINGS_PER_TEN_MINUTES = RECORDINGS_PER_MS * MILLISECONDS_PER_TEN_MINUTES
 # threshold for impossible distance movements
 THRESHOLD = 25
 
-def distance(x1, y1, x2, y2):
+def dist(x1, y1, x2, y2):
     """Computes the distance between the two specified points."""
     return sqrt((x2-x1)**2 + (y2-y1)**2)
 
@@ -62,7 +62,7 @@ distances = []
 for i in range(1, len(all_data)):
     before = all_data[i-1]
     after = all_data[i]
-    distances.append(distance(before[0], before[1], after[0], after[1]))
+    distances.append(dist(before[0], before[1], after[0], after[1]))
 
 # filter out distances which are impossible
 trimmed_distances = filter(lambda x: x < THRESHOLD, distances)
