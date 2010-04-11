@@ -11,6 +11,7 @@ MILLISECONDS_PER_SECOND = 1000
 MILLISECONDS_PER_TEN_MINUTES = MILLISECONDS_PER_SECOND * SECONDS_PER_TEN_MINUTES
 
 RECORDINGS_PER_SECOND = 5
+RECORDINGS_PER_MINUTE = RECORDINGS_PER_SECOND * float(SECONDS_PER_MINUTE)
 RECORDINGS_PER_MS = RECORDINGS_PER_SECOND / float(MILLISECONDS_PER_SECOND)
 RECORDINGS_PER_TEN_MINUTES = RECORDINGS_PER_MS * MILLISECONDS_PER_TEN_MINUTES
 
@@ -101,6 +102,8 @@ max_velocity = max(velocities)
 
 print 'Number of recordings made:', num_recordings
 print 'Total time of recordings, in milliseconds:', num_recordings / RECORDINGS_PER_MS
+print 'Total time of recordings, in seconds:', num_recordings / RECORDINGS_PER_SECOND
+print 'Total time of recordings, in minutes:', num_recordings / RECORDINGS_PER_MINUTE
 print
 print 'Maximum distance traveled per timestep:', max_distance_per_timestep
 print 'Average distance traveled per timestep:', avg_distance_per_timestep
