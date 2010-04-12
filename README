@@ -2,10 +2,11 @@ This program computes statistics from data read from a Docklight log file.
 
 To run this program, do
 
-  ./docklight.py <inputfile>
+  ./docklight.py </path/to/inputfile>
 
-where <inputfile> is the name of the file containing the Docklight log data.
+where </path/to/inputfile> is the name of the file containing the Docklight log
+data.
 
-Run the example by executing the command
+For example, run the example by executing the following command
 
   ./docklight.py example/example_log_file.txt
